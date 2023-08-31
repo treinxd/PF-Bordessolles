@@ -1,0 +1,31 @@
+
+
+.info .carousel-item{
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .info .carousel-item::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.464);
+    
+    }
+    
+
+}
+
+
+.info .carousel-item .contenedor-info{
+    background-color: #0004ff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}

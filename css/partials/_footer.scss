@@ -1,0 +1,62 @@
+footer {
+    background: rgb(0, 0, 0);
+}
+
+.footerContainer {
+    width: 100%;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    animation-duration: 1s;
+    animation-name: zoom-in;
+
+    a{
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 50px;
+        border-radius: 50%;
+    }
+    a i{
+        font-size: 1.5em;
+        color: black;
+        opacity: 0.9;
+        transition: 1s;
+    }
+
+    & a:hover{
+        background-color: #0004ff;
+        transition: 0.5s;
+    }
+    
+    & a:hover i{
+        color: white;
+    }
+
+
+}
+
+/* effectos hover de redes sociales iconos*/
+
+
+.footerBottom{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+
+    p{
+        color: rgb(0, 0, 0);
+    }
+
+}
+
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}

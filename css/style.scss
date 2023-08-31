@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+@import "./partials/_footer.scss";
+@import "./partials/_nav.scss";
+@import "./partials/index";
+@import "./partials/info";
+@import "./partials/servicios";
+@import "./partials/beats";
+@import "./partials/media";
+
+*{  
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Oblique';
+    src: url(../fonts/Groteskly\ Yours\ -\ Resist\ Sans\ Display\ Medium\ Oblique.otf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f7f7f7;
+}

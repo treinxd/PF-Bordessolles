@@ -1,0 +1,39 @@
+.imagen{
+    padding: 30px;
+}
+
+.beats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.beats-letras{
+    animation-duration: 1s;
+    animation-name: texto;
+}
+
+.imagenes-beats {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+
+    img {
+        width: 100%;
+        height: auto; 
+        object-fit: contain;
+        margin-bottom: 3rem;
+        padding: 2rem;
+    }
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.beats-letras{
+    text-align: center;
+    margin-top: 1rem;
+}

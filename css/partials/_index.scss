@@ -1,0 +1,154 @@
+.info {
+    position: relative;
+    z-index: 1;
+}
+
+
+.inicio{
+    height: 900px;
+    background: url(../imagenes/1.jpg);
+    background-size: cover;
+    background-position: center -100px;
+
+}
+
+.inicio-2{
+  height: 900px;
+  background: url(../imagenes/5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.texto-inicio{
+    font-size: 8rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 14rem;
+}
+
+
+.texto-inicio-2{
+  font-size: 8rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10rem;
+  background-color: rgba(0, 0, 0, 0.66);
+}
+
+@keyframes texto{
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.texto-inicio h1, h3{
+    line-height: 12rem;
+    animation-duration: 2s;
+    animation-name: texto; 
+    transition: 1s;
+
+    &:hover{
+      color: #0004ff;
+      transform: scale(1.1);
+    }
+}
+
+.texto-info{
+  font-size: 1.6rem;
+  max-width: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -900px;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+.boton {
+  border-radius: 40px;
+  background-color: white;
+  padding: 15px 40px;
+  color: black;
+  font-size: 2rem;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  animation-duration: 1s;
+  animation-name: zoom-in;
+  position: relative;
+
+  &:hover {
+    color: white;
+    transform: scale(1.1);
+
+    &::before {
+      width: 100%;
+      background-color: blue;
+    }
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #0004ff;
+    width: 0; 
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+  }
+}
+
+.boton-2{
+  border-radius: 40px;
+  background-color: white;
+  padding: 15px 40px;
+  color: black;
+  margin-left: -900px;
+  margin-top: 50px;
+  font-size: 2rem;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  animation-duration: 1s;
+  animation-name: zoom-in;
+  position: relative;
+
+  &:hover {
+    color: white;
+    transform: scale(1.1);
+
+    &::before {
+      width: 100%;
+      background-color: blue;
+    }
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #0004ff;
+    width: 0; 
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+  }
+}

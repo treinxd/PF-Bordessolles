@@ -17,9 +17,24 @@
     
 </head>
 <body>
+    <style>
+        ::-webkit-scrollbar{
+            width: 18px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: #0004ff;
+            border-radius: 15px;
+            border: 2px solid #0004ff;
+        }
 
+        ::-webkit-scrollbar-track-piece{
+            background: #ffffff;
+        }
+    </style>
     <header>
-        <img class="logo" src="../imagenes/icon.png" alt="logo">
+        <a href="../index.html" class="logo-link">
+            <img class="logo" src="../imagenes/icon.png" alt="logo">
+          </a>
         <button id="abrirNav" class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="nav" id="nav">
             <button id="cerrarNav" class="cerrar-menu"><i class="bi bi-x-circle-fill"></i></button>
